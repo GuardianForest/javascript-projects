@@ -3,23 +3,24 @@
 
 // Given the values for fuelLevel, crewStatus and computerStatus, should launchReady be true or false?
 // Is the program behaving as expected?
-
+// No. Changing variable for the fuel check and then adding it to the if statement to check launchReady would correct this.
 let launchReady = false;
 let fuelLevel = 17000;
 let crewStatus = true;
 let computerStatus = 'green';
+let fuelStatus = false
 
 if (fuelLevel >= 20000) {
    console.log('Fuel level cleared.');
-   launchReady = true;
+   fuelStatus = true;
 } else {
    console.log('WARNING: Insufficient fuel!');
-   launchReady = false;
+   fuelStatus = false;
 }
 
-console.log("launchReady = ", launchReady);
+console.log("Fuel Status = ", fuelStatus);
 
-if (crewStatus && computerStatus === 'green'){
+if (crewStatus && computerStatus === 'green' && fuelStatus){
    console.log('Crew & computer cleared.');
    launchReady = true;
 } else {

@@ -30,3 +30,4 @@ Time = TravelTime / 24;
 
 // Print the results of the trip to the moon below
 console.log(shuttle, "will take", Time, "days to reach the Moon.")
+

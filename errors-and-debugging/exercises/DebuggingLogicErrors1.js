@@ -30,3 +30,4 @@ if (launchReady) {
 } else {
    console.log('Launch scrubbed.');
 }
+console.log("It did but it should not have launched. This is due to logic error in utilizing the same variable launchReady in both the fuel level check and the overall launch check.")
